@@ -1,5 +1,6 @@
 package quickcheck
 
+// Doc comment
 import common._
 
 import org.scalacheck._
