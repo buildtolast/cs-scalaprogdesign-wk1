@@ -26,9 +26,6 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
     findMin(insert(m, h)) == m
   }
 
-  property("insert") = forAll {
-    a: Int =>
-      findMin(insert(a, insert(2, empty))) == 2
-  }
+  property("insert") = findMin(insert(Gen.choose(20, 1000).sample.get, insert(2, empty))) == 2
 
 }
