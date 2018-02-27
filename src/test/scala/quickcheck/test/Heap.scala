@@ -1,5 +1,7 @@
 package quickcheck.test
 
+import java.util.NoSuchElementException
+
 // Figure 3, page 7
 trait BinomialHeap extends quickcheck.Heap {
 

@@ -68,3 +68,4 @@ project/plugins/project/
 *.log
 
 .idea/inspectionProfiles/
+/.idea/
